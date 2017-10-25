@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <VideoView
+        android:id="@+id/video_player"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:focusable="false"
+        android:id="@+id/linear_player01"
+        android:visibility="invisible"
+        android:background="#CC000000"
+        android:layout_marginTop="@dimen/w_964"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_116"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+        <Button
+            android:id="@+id/bt_onAndoff"
+            android:focusable="true"
+            android:background="@drawable/start1"
+            android:layout_width="@dimen/w_100"
+            android:layout_height="@dimen/w_100"
+            android:layout_marginLeft="@dimen/h_80"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:id="@+id/player_currentime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00:00"
+            android:layout_marginLeft="@dimen/w_300"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/player_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=" /00:00"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/player_currentime"
+            android:layout_toEndOf="@+id/player_currentime" />
+        <TextView
+            android:id="@+id/player_tittle01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="正在播放:"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/w_106"
+            android:layout_toRightOf="@+id/player_size"
+            android:layout_toEndOf="@+id/player_size" />
+        <TextView
+            android:id="@+id/player_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/player_tittle01"
+             />
+        <Button
+            android:id="@+id/bt_circle"
+            android:nextFocusRight="@id/bt_onAndoff"
+            android:focusable="true"
+            android:layout_width="@dimen/w_100"
+            android:layout_height="@dimen/w_100"
+            android:background="@drawable/d07"
+            android:layout_marginRight="@dimen/w_90"
+            android:layout_marginEnd="@dimen/w_392"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/bt_collect"
+            android:focusable="true"
+            android:layout_width="@dimen/w_100"
+            android:layout_height="@dimen/w_100"
+            android:background="@drawable/d08"
+            android:layout_marginRight="@dimen/w_166"
+            android:layout_alignTop="@+id/bt_circle"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/w_166" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_player02"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/w_minus"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_above="@+id/linear_player01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible">
+
+        <SeekBar
+            android:id="@+id/seekBar_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            style="@style/MediaController_SeekBar"
+            android:progress="0"
+            android:secondaryProgress="0"
+            android:max="100"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:indeterminate="false"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/w_170"
+        android:layout_height="@dimen/h_252"
+        android:id="@+id/progressBar"
+        android:indeterminateDrawable="@drawable/processbar_frame"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:focusable="false"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/linear_player03"
+        android:background="#66000000"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:layout_width="@dimen/w_328"
+        android:layout_height="@dimen/h_958"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:scrollbars="vertical"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#7FCC0000"
+        android:layout_marginTop="@dimen/h_400"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

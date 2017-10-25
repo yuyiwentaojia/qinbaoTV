@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <size
+                android:height="@dimen/w_64"
+                android:width="@dimen/h_64"
+                />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/d24" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/d24" />
+    <item android:state_focused="false" android:state_pressed="false" android:drawable="@drawable/d24" />
+    <item android:drawable="@drawable/d24" />
+</layer-list>

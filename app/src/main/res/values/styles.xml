@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="ImageTheme" parent="Theme.AppCompat.Light.NoActionBar"> </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+    <item name="android:windowFrame">@null</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:windowIsTranslucent">false</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:background">@null</item>
+        <!--设置背景是否为暗色-->
+    <item name="android:backgroundDimEnabled">true</item>
+    <item name="android:windowBackground"> @android:color/transparent </item>
+</style>
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/seekbar_style</item>
+        <item name="android:indeterminateDrawable">@drawable/seekbar_style</item>
+        <item name="android:minHeight">@dimen/w_6</item>
+        <item name="android:maxHeight">@dimen/w_6</item>
+        <item name="android:thumb">@drawable/seekbar_thumb</item>
+        <item name="android:thumbOffset">@dimen/w_16</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+    </style>
+    <style name="Theme.AppCompat.Fullscreen">
+        <!-- 设置无标题，标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!-- 设置全屏-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="Theme.AppCompat.Fullscreen01">
+        <!-- 设置无标题，标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <!-- 设置全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设值成透明-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

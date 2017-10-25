@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.iqinbao.android.songstv.view.RecyclerViewTV
+        android:focusable="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/imageView_play_record_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_collection"
+        android:descendantFocusability="afterDescendants">
+    </com.iqinbao.android.songstv.view.RecyclerViewTV>
+</LinearLayout>

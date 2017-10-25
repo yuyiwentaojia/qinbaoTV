@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/w_994"
+    android:layout_height="@dimen/h_558"
+    android:layout_gravity="center"
+    android:focusable="false"
+    android:gravity="center">
+    <!-- 退出游戏的背景图 -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout_exit"
+        android:layout_width="@dimen/w_994"
+        android:layout_height="@dimen/h_558"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/exitBackground"
+            android:layout_width="@dimen/w_994"
+            android:layout_height="@dimen/h_558"
+            android:background="@drawable/tanchuang"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/w_240"
+            android:layout_height="@dimen/h_74"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/h_222"
+            android:layout_marginRight="@dimen/w_280"
+            android:focusable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/sure" />
+
+        <!-- 取消 -->
+        <ImageView
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/w_240"
+            android:layout_height="@dimen/h_74"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginBottom="@dimen/h_112"
+            android:layout_marginRight="@dimen/w_280"
+            android:focusable="true"
+            android:src="@drawable/cancel" />
+    </RelativeLayout>
+</RelativeLayout>

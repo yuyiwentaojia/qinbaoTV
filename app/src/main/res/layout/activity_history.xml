@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/b01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iqinbao.android.songstv.activity.CollectionActivity">
+    <LinearLayout
+        android:focusable="false"
+        android:layout_width="@dimen/textView_song_list_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="亲宝儿歌"
+            android:id="@+id/textView3" />
+
+        <Button
+            android:layout_marginTop="@dimen/linear_margin_left"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:focusable="true"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="播放记录"
+            android:id="@+id/bt_record" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="@dimen/bt_margin_top"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="我的收藏"
+            android:id="@+id/bt_collection" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:focusable="false"
+        android:layout_marginLeft="@dimen/imageView_4_left"
+        android:layout_marginTop="@dimen/imageView_play_record_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_collection"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:layout_toEndOf="@+id/linearLayout2"
+        android:layout_below="@+id/linearLayout">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/recycler_collection"
+        android:layout_alignStart="@+id/recycler_collection"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="按返回键可以退出删除模式哦"
+            android:id="@+id/textView4" />
+    </LinearLayout>
+
+
+</RelativeLayout>

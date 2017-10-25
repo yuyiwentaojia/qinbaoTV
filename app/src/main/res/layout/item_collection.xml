@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/recyclerView_width"
+    android:layout_height="@dimen/playvideo_height"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:gravity="center">
+        <com.iqinbao.android.songstv.view.MyOvelImageView
+            android:id="@+id/item_image"
+            android:scaleType="centerCrop"
+            android:focusable="true"
+            android:layout_width="@dimen/recyclerView_width"
+            android:layout_height="@dimen/playvideo_height"
+            />
+        <TextView
+            android:id="@+id/textView_name"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_text_height"
+            android:layout_marginTop="@dimen/item_text_margin_top"
+            android:background="@drawable/textview_transparent_image"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_item_size" />
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/item_image_top"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/d01"
+            android:visibility="gone"/>
+</FrameLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout_text"
+    android:layout_width="@dimen/w_320"
+    android:layout_height="@dimen/h_84"
+    android:focusable="true"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/textView_song_list"
+        android:layout_width="@dimen/playvideo02_width"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/sing_list_text_bg"
+        android:background="@drawable/sing_list_text_bg"
+        android:textSize="@dimen/w_40"/>
+    <ImageView
+        android:id="@+id/imageView_song_list"
+        android:layout_width="@dimen/h_300"
+        android:layout_height="@dimen/h_26"
+        android:visibility="gone"/>
+</LinearLayout>

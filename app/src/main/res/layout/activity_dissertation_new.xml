@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dissert_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/dissert_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:scaleType="fitXY"/>
+    <ScrollView
+        android:id="@+id/category_list_scroll_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/w_320"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/textView_song_list_height"
+        android:layout_marginRight="@dimen/w_18"
+        android:layout_marginTop="@dimen/space_50"
+        android:focusable="false"
+        android:fillViewport="false"
+        android:scrollbars="none"
+        android:showDividers="end">
+    <LinearLayout
+        android:id="@+id/category_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    </ScrollView>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_category_list"
+        android:layout_height="match_parent"
+        android:layout_width="@dimen/w_320"
+        android:layout_marginBottom="@dimen/h_35"
+        android:layout_marginRight="@dimen/w_18"
+        android:layout_marginTop="@dimen/h_45"
+        android:focusable="false"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/h_25"
+        android:layout_marginRight="@dimen/w_90"
+        android:descendantFocusability="afterDescendants"
+        android:layout_toRightOf="@+id/category_list_scroll_layout"
+        android:focusable="false" />
+
+</RelativeLayout>
+
